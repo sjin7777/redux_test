@@ -1,8 +1,13 @@
 import AddNumber from "../components/AddNumber";
+import store from "../store";
 
 function Component() {
+    const handleClick = (size)  => {
+        store.dispatch({type:'INCREMENT', size})
+    }
+
     return(
-        <AddNumber></AddNumber>
+        <AddNumber handleClick={handleClick}/>
     )
 }
 

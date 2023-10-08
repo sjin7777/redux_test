@@ -1,4 +1,4 @@
-import ParentGoChildren from "./ParentGoChildren";
+import ParentGoChildren from "../containers/ParentGoChildren";
 
 function ParentGoChildRoot() {
     return (

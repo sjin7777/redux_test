@@ -1,12 +1,4 @@
-import { useState, useEffect } from "react";
-import store from "../store";
-
-function ParentGoChildren() {
-    const [ storeNumber, setStoreNumber ] = useState(0);
-
-    useEffect(() => {
-        store.subscribe(() => setStoreNumber(store.getState().number));
-    })
+function ParentGoChildren({storeNumber}) {
 
     return (
         <div>
